@@ -21,3 +21,19 @@ function operate(a, operator, b) {
     return divide(a, b);
   }
 }
+let displayText = "";
+const display = document.querySelector(".display");
+const numbers = document.querySelectorAll(".number");
+const operators = document.querySelectorAll(".operator");
+numbers.forEach((number) => {
+  number.addEventListener("click", (e) => {
+    displayText += e.target.dataset.number;
+    display.textContent = displayText;
+  });
+});
+operators.forEach((operator) => {
+  operator.addEventListener("click", (e) => {
+    displayText += ` ${e.target.dataset.operator} `;
+    display.textContent = displayText;
+  });
+});
