@@ -1,4 +1,49 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: gray;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 400px;
+  align-items: center;
+}
 .display {
+  background-color: #2b7c24;
   height: 50px;
   width: 200px;
+  font-size: 20px;
+}
+.buttons {
+  margin: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 126px;
+}
+.operators {
+  display: flex;
+  flex-direction: column;
+}
+.number,
+.operator,
+.result {
+  font-size: 24px;
+  width: 42px;
+  height: 42px;
+}
+.results {
+  display: flex;
+  gap: 84px;
+}
+.result {
+  background-color: #b31409;
 }
