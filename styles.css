@@ -49,7 +49,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  width: 126px;
+  width: 168px;
 }
 .result {
   background-color: #b31409;
