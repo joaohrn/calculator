@@ -45,7 +45,7 @@ operators.forEach((operator) => {
 });
 result.addEventListener("click", () => {
   operationArray = displayText.split(" ");
-  while (operationArray.length != 1) {
+  while (operationArray.length > 1) {
     let newNumber = operate(
       operationArray[0],
       operationArray[1],
